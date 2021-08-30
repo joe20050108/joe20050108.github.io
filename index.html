@@ -1,0 +1,462 @@
+<!-- this is just useless -->
+<!DOCTYPE HTML>
+<html>
+    <script>
+        //simplist bugfix in the book, just make the chars and offsetchars go up to 50 and double..... so a Z doesn't freak out and you can
+//offset to a total max of 24 letters
+//also add some general characters, increase for loop limit, and figure out how to get spaces to work
+
+const chars = [];
+chars[0] = "a"
+chars[1] = "b"
+chars[2] = "c"
+chars[3] = "d"
+chars[4] = "e"
+chars[5] = "f"
+chars[6] = "g"
+chars[7] = "h"
+chars[8] = "i"
+chars[9] = "j"
+chars[10] = "k"
+chars[11] = "l"
+chars[12] = "m"
+chars[13] = "n"
+chars[14] = "o"
+chars[15] = "p"
+chars[16] = "q"
+chars[17] = "r"
+chars[18] = "s"
+chars[19] = "t"
+chars[20] = "u"
+chars[21] = "v"
+chars[22] = "w"
+chars[23] = "x"
+chars[24] = "y"
+chars[25] = "z"
+chars[26] = "."
+chars[27] = "a"
+chars[28] = "b"
+chars[29] = "c"
+chars[30] = "d"
+chars[31] = "e"
+chars[32] = "f"
+chars[33] = "g"
+chars[34] = "h"
+chars[35] = "i"
+chars[36] = "j"
+chars[37] = "k"
+chars[38] = "l"
+chars[39] = "m"
+chars[40] = "n"
+chars[41] = "o"
+chars[42] = "p"
+chars[43] = "q"
+chars[44] = "r"
+chars[45] = "s"
+chars[46] = "t"
+chars[47] = "u"
+chars[48] = "v"
+chars[49] = "w"
+chars[50] = "x"
+chars[51] = "y"
+chars[52] = "z"
+chars[53] = "."
+chars[54] = "a"
+chars[55] = "b"
+chars[56] = "c"
+chars[57] = "d"
+chars[58] = "e"
+chars[59] = "f"
+chars[60] = "z"
+chars[61] = "."
+chars[62] = "a"
+chars[63] = "b"
+chars[64] = "c"
+chars[65] = "d"
+chars[66] = "e"
+chars[67] = "f"
+
+const offsetChars = [];
+
+const offsetString = [];
+
+function boring(text, offset) {
+    var count = 0;
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    for (i = 0; i < 100; i++){
+        if (text.substring(count, count + 1) == chars[i]){
+            //console.log("Character " + "'" + chars[i] + "'" + " located at array position: " + i);
+            offsetString[count] = chars[i + offset];
+            count++;
+            offsetChars[i] = chars[i + offset];
+            //console.log("Offset: " + offset);
+            //console.log("Character " + "'" + chars[i] + "'" + " offset to " + "'" + offsetChars[i] + "'");
+        }
+    }
+    logOffsetArray();
+    printOffsetString();
+}
+
+function printOffsetString() {
+    var cleanOffsetString = offsetString.join('');
+    console.log("Fragmented format: ");
+    console.log(offsetString);
+    console.log("Unfragmented Format: ");
+    console.log(cleanOffsetString);
+}
+
+function logOffsetArray() {
+    console.log("Array Status: ");
+    console.log(offsetChars);
+}
+    </script>
+</html>
