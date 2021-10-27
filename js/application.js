@@ -12,7 +12,7 @@ loadApplets();
 function loadApplets() {
     document.write('<script type="text/javascript" src="js/commandApplets/version.js"></script>');
     document.write('<script type="text/javascript" src="js/commandApplets/nope.js"></script>');
-    document.write('<script type="text/javascript" src="js/commandApplets/till.js"></script>');
+    document.write('<script type="text/javascript" src="js/commandApplets/feild.js"></script>');
 }
 
 //execute commands and executecommand event key listeners
