@@ -8,13 +8,12 @@ var param2Window = document.getElementById("param2");
 var outputWindow = document.getElementById("outputWindow");
 
 //loads the "interpreters" of sorts
-//yeah so uh github hates this
-/*loadApplets();
+loadApplets();
 function loadApplets() {
     document.write('<script type="text/javascript" src="js/commandApplets/version.js"></script>');
     document.write('<script type="text/javascript" src="js/commandApplets/nope.js"></script>');
-    //command interpreter for feild tiller translator loader
-}*/
+    document.write('<script type="text/javascript" src="js/commandApplets/till.js"></script>');
+}
 
 //execute commands and executecommand event key listeners
 inputButton.onclick = executeCommands;
@@ -40,8 +39,6 @@ function executeCommands() {
 }
 /* ######################################### */
 //displays the error messages to the devkit console
-//this might just need to be added to appKit under the "console" folder
-//or just duplicated
 function listError(text) {
     sendText("[Error] " + text);
 }
