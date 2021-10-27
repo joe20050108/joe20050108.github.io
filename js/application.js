@@ -4,6 +4,7 @@ var devKitVersion = 0.2;
 var inputButton = document.getElementById("submitButton");
 var inputWindow = document.getElementById("inputCommand");
 var param1Window = document.getElementById("param1");
+var param2Window = document.getElementById("param2");
 var outputWindow = document.getElementById("outputWindow");
 
 //loads the "interpreters" of sorts
@@ -11,6 +12,7 @@ loadApplets();
 function loadApplets() {
     document.write('<script type="text/javascript" src="js/commandApplets/version.js"></script>');
     document.write('<script type="text/javascript" src="js/commandApplets/nope.js"></script>');
+    //command interpreter for feild tiller translator loader
 }
 
 //execute commands and executecommand event key listeners
@@ -29,12 +31,17 @@ function executeCommands() {
     displayWarning("Executing commands, please wait.");
     input = inputWindow.value;
     param1 = param1Window.value;
+    param2 = param2Window.value;
     displayVersion();
     hto();
+    //step 3
+    openTillerTranslator();
     displayOK("Commands executed");
 }
 /* ######################################### */
 //displays the error messages to the devkit console
+//this might just need to be added to appKit under the "console" folder
+//or just duplicated
 function listError(text) {
     sendText("[Error] " + text);
 }
