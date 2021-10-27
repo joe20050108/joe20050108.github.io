@@ -8,12 +8,13 @@ var param2Window = document.getElementById("param2");
 var outputWindow = document.getElementById("outputWindow");
 
 //loads the "interpreters" of sorts
-loadApplets();
+//yeah so uh github hates this
+/*loadApplets();
 function loadApplets() {
     document.write('<script type="text/javascript" src="js/commandApplets/version.js"></script>');
     document.write('<script type="text/javascript" src="js/commandApplets/nope.js"></script>');
     //command interpreter for feild tiller translator loader
-}
+}*/
 
 //execute commands and executecommand event key listeners
 inputButton.onclick = executeCommands;
@@ -34,8 +35,7 @@ function executeCommands() {
     param2 = param2Window.value;
     displayVersion();
     hto();
-    //step 3
-    openTillerTranslator();
+    openTiller();
     displayOK("Commands executed");
 }
 /* ######################################### */

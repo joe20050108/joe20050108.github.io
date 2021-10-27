@@ -7,9 +7,8 @@
 //boy do i need to make a proper CMD
 
 console.log("What are you doing here.");
-var output;
 
-function openTillerTranslator() {
+function openTiller() {
     if (input == "tiller") {
         if (param1 == "encrypt") {
             displayWarning("Calling the encrypter.");
